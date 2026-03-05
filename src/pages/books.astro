@@ -1,0 +1,101 @@
+---
+import Base from "../layouts/Base.astro";
+
+const books = [
+  {
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    note: "La base de escribir codigo que otros (y tu futuro yo) puedan leer.",
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    note: "Referencia obligatoria cuando hablo de sistemas de control y pensamiento critico.",
+  },
+  {
+    title: "The Pragmatic Programmer",
+    author: "David Thomas & Andrew Hunt",
+    note: "Mentalidad de craftsman aplicada al software.",
+  },
+  {
+    title: "Sapiens",
+    author: "Yuval Noah Harari",
+    note: "Entender la historia humana desde la logica y la ciencia.",
+  },
+  {
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    note: "Como funciona el cerebro y por que tomamos decisiones irracionales.",
+  },
+];
+---
+
+<Base title="Books - pygabo" description="Libros que me han marcado como desarrollador y como persona.">
+  <section>
+    <h1>Mis libros favoritos</h1>
+    <p class="subtitle">Los libros que me han formado. Si me pides un consejo, probablemente te mande a leer uno de estos.</p>
+
+    <ul class="book-list">
+      {books.map((book) => (
+        <li class="book">
+          <h3>{book.title}</h3>
+          <span class="author">{book.author}</span>
+          <p>{book.note}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    color: var(--color-text-muted);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .book-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .book {
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    transition:
+      border-color var(--transition),
+      background var(--transition);
+  }
+
+  .book:hover {
+    border-color: var(--color-accent);
+    background: var(--color-bg-secondary);
+  }
+
+  .book h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  .author {
+    font-size: 0.85rem;
+    color: var(--color-accent-light);
+    font-family: var(--font-mono);
+  }
+
+  .book p {
+    margin-top: 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+</style>

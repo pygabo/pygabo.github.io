@@ -36,6 +36,32 @@ import Base from "../layouts/Base.astro";
         <li><strong>Warning: Humor Pesado:</strong> A veces hago chistes pesados o sarcasticos que pueden herir sin intencion. Si cruzo una linea, dimelo de inmediato; no hay mala fe, es mi forma de liberar tension.</li>
         <li><strong>Soluciones sobre Disculpas:</strong> No pierdas energia pidiendo perdon; inviertela en la solucion tecnica.</li>
       </ul>
+
+      <h3>Ejemplos reales de como doy feedback</h3>
+      <p>Opero en modo <strong>bajo contexto</strong>. Como describe Erin Meyer en <em>The Culture Map</em>, las culturas de bajo contexto (Paises Bajos, Israel, Alemania) comunican el mensaje de forma explicita, sin envolver la critica en capas de cortesia. Yo funciono asi:</p>
+
+      <div class="feedback-examples">
+        <div class="example">
+          <span class="label bad">Alto contexto (lo que NO hago)</span>
+          <blockquote>"Oye, esta bastante bien lo que hiciste, solo que quizas podriamos considerar revisar algunos tiempos de entrega para la proxima."</blockquote>
+        </div>
+        <div class="example">
+          <span class="label good">Bajo contexto (lo que SI hago)</span>
+          <blockquote>"Tu trabajo fue una mierda. Demoraste demasiado y la calidad no esta ni cerca de lo que necesitamos. Vamos a sentarnos a ver que paso y como lo arreglamos."</blockquote>
+        </div>
+      </div>
+
+      <p>Y creeme: <strong>lo voy a agradecer si me hablas igual.</strong> No necesito que me protejas del mensaje. Necesito la verdad para mejorar.</p>
+
+      <p>En <em>The Culture Map</em>, Meyer ubica a paises como Holanda y Israel en el extremo del "negative feedback directo": el mensaje es claro, sin filtro, y se separa de la persona. Eso es exactamente lo que espero. Algunos ejemplos mas:</p>
+
+      <ul>
+        <li><strong>"Este PR no tiene sentido. Reescribelo."</strong> &mdash; No me ofendo, lo agradezco. Es mas util que "tiene areas de oportunidad".</li>
+        <li><strong>"Llevas tres dias en algo que deberia tomar medio dia."</strong> &mdash; Perfecto. Ahora puedo explicar el bloqueo o aceptar que la cague.</li>
+        <li><strong>"Tu diseno de la base de datos esta mal pensado."</strong> &mdash; Mejor eso que descubrirlo en produccion.</li>
+      </ul>
+
+      <p>La franqueza no es agresion. Es respeto por el tiempo y la inteligencia del otro.</p>
     </section>
 
     <section>
@@ -52,6 +78,24 @@ import Base from "../layouts/Base.astro";
         <li><strong>Deep Work:</strong> Cuando estoy concentrado, mi nivel de inmersion es alto. Si algo puede esperar 30 minutos, dejalo en el chat.</li>
         <li><strong>Disponibilidad:</strong> Mi prioridad es resolver y avanzar. Si hay un incendio real en produccion o un bloqueo tecnico, siempre estare presente para darle solucion.</li>
       </ul>
+    </section>
+
+    <section>
+      <h2>Fuera del codigo</h2>
+      <p>Si no estoy frente a una terminal, probablemente estoy buscando adrenalina. Me atraen los deportes que implican riesgo y contacto directo con la naturaleza:</p>
+      <ul>
+        <li><strong>Rapel</strong> &mdash; Bajar una pared vertical es la mejor metafora de confiar en el sistema que armaste.</li>
+        <li><strong>Ciclismo</strong> &mdash; Ruta y resistencia. Pedal y cabeza.</li>
+        <li><strong>Senderismo</strong> &mdash; Subir una montana sin atajos, como debuggear produccion.</li>
+        <li><strong>Paracaidismo</strong> &mdash; No he saltado tanto como quisiera. Cada vez que puedo, salto.</li>
+        <li><strong>Natacion</strong> &mdash; No nado tan bien como quisiera. Pendiente por mejorar.</li>
+      </ul>
+
+      <h3>Y el futbol?</h3>
+      <p>No me gusta. Lo entiendo a nivel tecnico, pero no me hace sentido el fanatismo. No me vas a ver gritando un gol un domingo.</p>
+      <p>Pero soy del Caribe colombiano, y en el Caribe el futbol no es un deporte: es identidad. Asi que por herencia cultural y por respeto a la tierra: <strong>Junior tu papa.</strong> Eso no se negocia.</p>
+      <p>La verdad es que aprendi de futbol por accidente. Tenia una oficina en casa en Barranquilla que daba a la piscina del conjunto, y todos los dias en la tarde llegaban ninos entre 8 y 12 anos a hablar de futbol mientras yo intentaba trabajar. Escuchabas nombres todo el dia, jugadas, discusiones, predicciones. Fue imposible no absorberlo.</p>
+      <p>Asi aprendi a admirar a <strong>Luis Diaz</strong> &mdash; un pelao de Barrancas que llego a Liverpool a punta de talento y hambre. Y a <strong>Maradona</strong>, porque cuando ves los videos entiendes que hay genios que trascienden cualquier deporte. Conozco las referencias, puedo hablar del tema, pero no es lo mio. Si me invitas a ver un partido, voy. Si me invitas a saltar de un avion, llego primero.</p>
     </section>
   </article>
 </Base>
@@ -109,5 +153,61 @@ import Base from "../layouts/Base.astro";
 
   li strong {
     color: var(--color-text);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+  }
+
+  em {
+    color: var(--color-accent-light);
+    font-style: italic;
+  }
+
+  .feedback-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .example {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+  }
+
+  .label {
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    padding: 0.15em 0.5em;
+    border-radius: 4px;
+  }
+
+  .label.bad {
+    color: #f87171;
+    background: rgba(248, 113, 113, 0.1);
+  }
+
+  .label.good {
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+  }
+
+  blockquote {
+    border-left: 3px solid var(--color-border);
+    padding-left: 1rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    line-height: 1.6;
   }
 </style>
