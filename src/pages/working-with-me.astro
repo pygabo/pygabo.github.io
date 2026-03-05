@@ -1,0 +1,113 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Working With Me - pygabo" description="How to work with Jose Gabriel. My personal README.">
+  <article class="manifesto">
+    <h1>Como trabajar con Jose Gabriel</h1>
+    <p class="subtitle">Este documento es mi "README" personal. Usalo para entender mi sistema operativo y optimizar nuestra interaccion.</p>
+
+    <section>
+      <h2>Mi Mentalidad</h2>
+      <p>Para mi, el codigo es solo el lenguaje, pero el <strong>pensamiento critico</strong> y el <strong>metodo cientifico</strong> son la arquitectura. No busco solo que las cosas funcionen, sino entender la logica detras de ellas.</p>
+      <ul>
+        <li><strong>Agnosticismo y Logica:</strong> Mi vision del mundo es agnostica con tendencias ateas. Valoro lo que se puede probar, razonar y debatir con argumentos solidos.</li>
+        <li><strong>Filtro de Racionalidad:</strong> No tolero el fanatismo religioso, la pseudociencia ni temas como el horoscopo. Abordar un problema desde estos angulos es la forma mas rapida de perder mi respeto y mi atencion. Si no hay logica, no hay discusion.</li>
+        <li><strong>El "Por que" sobre el "Que":</strong> Si indago en la raiz de un error, no es una auditoria de culpa, es una busqueda de la verdad tecnica.</li>
+        <li><strong>Curiosidad Intelectual:</strong> Mi motor es el aprendizaje constante de conceptos reales y tangibles que expandan el intelecto.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Mi API de Comunicacion</h2>
+      <p>Optimizo mi comunicacion para la eficiencia tecnica y la profundidad intelectual.</p>
+      <ul>
+        <li><strong>Sin "Small Talk":</strong> No necesitas saludar ni hacer charla casual. Ve directo al grano; valoro la brevedad y la precision.</li>
+        <li><strong>Contexto Asincrono:</strong> Antes de pedir una reunion, envia un mensaje con el contexto completo. Si se resuelve en un hilo, no necesitamos la llamada.</li>
+        <li><strong>Referencias Literarias:</strong> Suelo dar feedback usando analogias de libros. Si te sugiero leer <strong>"1984" de Orwell</strong>, es porque la referencia contiene la clave de mi argumento.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Feedback y "Social Debugging"</h2>
+      <p>Respeto tu talento, por eso soy directo. Aqui es donde mi comunicacion puede ser mas intensa:</p>
+      <ul>
+        <li><strong>Directo y Crudo:</strong> Si algo esta mal, lo dire sin adornos. Es un estandar de calidad, no algo personal.</li>
+        <li><strong>Warning: Humor Pesado:</strong> A veces hago chistes pesados o sarcasticos que pueden herir sin intencion. Si cruzo una linea, dimelo de inmediato; no hay mala fe, es mi forma de liberar tension.</li>
+        <li><strong>Soluciones sobre Disculpas:</strong> No pierdas energia pidiendo perdon; inviertela en la solucion tecnica.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Mis "Bugs" Conocidos</h2>
+      <ol>
+        <li><strong>Falta de Reconocimiento:</strong> A veces me obsesiono con el problema y olvido celebrar el logro. Si sientes que falta validacion, dimelo.</li>
+        <li><strong>Sesgo de "Tener la Razon":</strong> Me encanta ensenar, pero a veces me cuesta soltar mi punto de vista. <strong>Desafiame</strong> con argumentos logicos; respeto los datos por encima de las jerarquias.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Gestion de Enfoque</h2>
+      <ul>
+        <li><strong>Deep Work:</strong> Cuando estoy concentrado, mi nivel de inmersion es alto. Si algo puede esperar 30 minutos, dejalo en el chat.</li>
+        <li><strong>Disponibilidad:</strong> Mi prioridad es resolver y avanzar. Si hay un incendio real en produccion o un bloqueo tecnico, siempre estare presente para darle solucion.</li>
+      </ul>
+    </section>
+  </article>
+</Base>
+
+<style>
+  .manifesto {
+    max-width: 640px;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    margin-top: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.75rem;
+    color: var(--color-accent-light);
+  }
+
+  section > p {
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.25rem;
+    color: var(--color-text-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  li {
+    line-height: 1.6;
+  }
+
+  li strong {
+    color: var(--color-text);
+  }
+</style>

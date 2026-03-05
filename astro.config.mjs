@@ -1,7 +1,7 @@
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: "https://pygabo.github.io",
+  site: "https://imgabo.dev",
   build: {
     assets: "assets",
   },
